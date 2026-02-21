@@ -1,0 +1,32 @@
+{
+  "name": "eth-pool-contracts",
+  "version": "1.0.0",
+  "description": "DeFi Investment Pool smart contracts",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:adi": "hardhat run scripts/deploy.js --network adi",
+    "deploy:adiTestnet": "hardhat run scripts/deploy.js --network adiTestnet",
+    "node": "hardhat node"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  },
+  "overrides": {
+    "bn.js": ">=5.2.1",
+    "elliptic": ">=6.6.0",
+    "minimist": ">=1.2.8",
+    "semver": ">=7.6.0",
+    "yargs": ">=17.7.2",
+    "tmp": ">=0.2.4",
+    "minimatch": ">=10.2.1",
+    "lodash": ">=4.17.22",
+    "cookie": ">=0.7.0",
+    "undici": "6.21.0"
+  }
+}
